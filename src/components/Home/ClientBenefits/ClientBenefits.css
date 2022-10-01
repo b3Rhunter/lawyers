@@ -1,0 +1,16 @@
+.cb-section {
+  text-align: center;
+}
+
+.cb-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cb-last-line {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: 'Rajdhani', sans-serif;
+}

@@ -1,0 +1,86 @@
+.mbcard {
+  border-radius: 10px;
+  background: rgb(70,70,70);
+  background: radial-gradient(circle, rgba(70,70,70,1) 0%, rgba(0,0,0,1) 100%);
+  padding: 20px 15px;
+  margin-bottom: 30px;
+  min-height: 100px;
+  height: calc(100% - 30px);
+  border: 1px solid #368cff;
+  cursor: pointer;
+}
+
+.mbcard-row-text {
+  height: calc(40% - 30px);
+  transition: 2s;
+}
+
+.mbcard.active .mbcard-row-text {
+  height: calc(70% - 30px);
+  transition: 2s;
+
+}
+
+.mbcard .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mbcard-icon-col{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  margin-top: 30px!important;
+  transition: 2s;
+}
+
+.mbcard.active .mbcard-icon-col {
+  font-size: 2rem;
+}
+
+.mbcard-icon-col .row{
+  height: calc(100% - 30px);
+}
+
+.mbcard p {
+  margin-bottom: 0;
+  text-align: center;
+  min-height: 50px;
+  font-family: "Inter";
+}
+
+.mbcard p:first-of-type {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.mbcard p:last-of-type {
+  font-size: 0;
+  transition: 2s;
+}
+
+.mbcard.active p:last-of-type {
+  font-size: 1rem;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .mbcard {
+    min-height: 160px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .mbcard {
+    min-height: 180px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .mbcard {
+    min-height: 140px;
+  }
+}

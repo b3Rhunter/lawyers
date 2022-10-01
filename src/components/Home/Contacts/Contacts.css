@@ -1,0 +1,25 @@
+.contacts-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contacts-links-col {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.contacts-links-col p {
+  font-size: 1.2rem;
+}
+
+.contacts-links-col a {
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
+.contacts-links-col a:not(:last-of-type) {
+  margin-right: 30px;
+}

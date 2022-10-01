@@ -1,0 +1,86 @@
+.cardDisplay {
+    border: 1 px solid #368cff;
+    color: #fff;
+
+}
+
+
+
+.cardStyle {
+    color: #fff;
+    transition: all .42s ease-in-out;
+    background-color:hsla(88,0%,0%,1);
+    background-image:
+    radial-gradient(at 86% 84%, hsla(237,84%,62%,0.2) 0px, transparent 50%),
+    radial-gradient(at 59% 82%, hsla(240,75%,60%,0.2) 0px, transparent 50%),
+    radial-gradient(at 39% 30%, hsla(240,100%,50%,0.16) 0px, transparent 50%),
+    radial-gradient(at 32% 9%, hsla(240,99%,75%,0.17) 0px, transparent 50%),
+    radial-gradient(at 96% 10%, hsla(189,63%,61%,0.05) 0px, transparent 50%),
+    radial-gradient(at 4% 3%, hsla(239,70%,77%,0) 0px, transparent 50%),
+    radial-gradient(at 50% 70%, hsla(233,73%,73%,0.2) 0px, transparent 50%);
+
+}
+
+
+
+
+.slide {
+    margin-top: -20px;
+    transition: all .33s ease-in-out;
+}
+
+.slide:hover{
+    margin-bottom: -600px;
+    padding-bottom: 400px;
+    z-index: 10;
+    opacity: 10%;
+}
+
+
+
+#cardStyle:hover {
+    box-shadow: inset 2px 2px 17px 0px rgba(0, 64, 255, 0.75);
+    -webkit-box-shadow: inset 2px 2px 17px 0px rgba(0, 64, 255, 0.75);
+    -moz-box-shadow: inset 2px 2px 17px 0px rgba(0, 64, 255, 0.75);
+
+    background-color:hsla(88,0%,0%,1);
+    background-image:
+    radial-gradient(at 86% 84%, hsla(237,84%,62%,0.2) 0px, transparent 50%),
+    radial-gradient(at 59% 82%, hsla(240,75%,60%,0.2) 0px, transparent 50%),
+    radial-gradient(at 39% 30%, hsla(240,100%,50%,0.16) 0px, transparent 50%),
+    radial-gradient(at 32% 9%, hsla(240,99%,75%,0.17) 0px, transparent 50%),
+    radial-gradient(at 96% 10%, hsla(189,63%,61%,0.05) 0px, transparent 50%),
+    radial-gradient(at 4% 3%, hsla(239,70%,77%,0) 0px, transparent 50%),
+    radial-gradient(at 50% 70%, hsla(233,73%,73%,0.2) 0px, transparent 50%);
+}
+
+#cardStyle img{
+    margin-top: -20px;
+    transition: all .33s ease-in-out;
+}
+
+#cardStyle img:hover {
+    margin-bottom: -600px;
+    padding-bottom: 400px;
+    z-index: 10;
+    opacity: 10%;
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+ul {
+    border-radius: 100%;
+
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }

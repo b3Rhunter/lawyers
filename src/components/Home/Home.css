@@ -1,0 +1,16 @@
+.bg {
+  background-color:hsla(88,0%,0%,1);
+  background-image:
+  radial-gradient(at 86% 84%, hsla(237,84%,62%,0.2) 0px, transparent 50%),
+  radial-gradient(at 59% 82%, hsla(240,75%,60%,0.2) 0px, transparent 50%),
+  radial-gradient(at 39% 30%, hsla(240,100%,50%,0.16) 0px, transparent 50%),
+  radial-gradient(at 32% 9%, hsla(240,99%,75%,0.17) 0px, transparent 50%),
+  radial-gradient(at 96% 10%, hsla(189,63%,61%,0.05) 0px, transparent 50%),
+  radial-gradient(at 4% 3%, hsla(239,70%,77%,0) 0px, transparent 50%),
+  radial-gradient(at 50% 70%, hsla(233,73%,73%,0.2) 0px, transparent 50%);
+  background-size: cover;
+  }
+
+  .background {
+    background-color: rgba(red, green, blue, 0.01);
+  }

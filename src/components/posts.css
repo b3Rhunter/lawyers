@@ -1,0 +1,89 @@
+@import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
+@import url("https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+
+.cursive {
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+}
+
+.prose img {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.background {
+    background-color:hsla(88,0%,0%,1);
+    background-image:
+    radial-gradient(at 86% 84%, hsla(237,84%,62%,0.2) 0px, transparent 50%),
+    radial-gradient(at 59% 82%, hsla(240,75%,60%,0.2) 0px, transparent 50%),
+    radial-gradient(at 39% 30%, hsla(240,100%,50%,0.16) 0px, transparent 50%),
+    radial-gradient(at 32% 9%, hsla(240,99%,75%,0.17) 0px, transparent 50%),
+    radial-gradient(at 96% 10%, hsla(189,63%,61%,0.05) 0px, transparent 50%),
+    radial-gradient(at 4% 3%, hsla(239,70%,77%,0) 0px, transparent 50%),
+    radial-gradient(at 50% 70%, hsla(233,73%,73%,0.2) 0px, transparent 50%);
+    background-size: cover;
+}
+
+.header-navbar-row {
+  background-color: #100F0F;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid #368cff;
+}
+
+.button {
+    background-color: #d02128;
+    border: 1px solid;
+    border-color: #313131;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    z-index: 10;
+    margin-bottom: 12px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
+
+.content {
+    color:antiquewhite;
+}
+
+.flag {
+-webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+}
+
+.logo {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 20%;
+margin-top: -25px;
+
+}
+
+.nav {
+    background-color: #313131;
+}
+
+@media only screen and (max-width: 600px) {
+   .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: -25px;
+    }
+    .payButton {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+  }

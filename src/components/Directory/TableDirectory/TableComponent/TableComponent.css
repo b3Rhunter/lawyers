@@ -1,0 +1,109 @@
+.table-component {
+  padding: 0 !important;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate !important;
+  border-spacing: 0;
+  border: solid #368cff 1px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #100F0F;
+  padding: 1rem;
+}
+
+th {
+  padding: 0.5rem;
+}
+
+td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #368cff !important;
+  background-color: #131314;
+}
+
+td img {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+
+#arrows {
+  text-decoration: none;
+}
+
+.expertise-areas-ul{
+  padding: 0;
+}
+
+.expertise-areas-li {
+  list-style-position: inside;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table-column-title{
+  margin: 0;
+}
+
+.table-expand-button {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  font-size: 3rem;
+  color: #368cff;
+  width: 50px;
+  height: 50px;
+}
+
+.table-expand-button svg {
+  transition: 0.2s;
+}
+
+.table-expand-button .active {
+  transform: rotate(180deg);
+}
+
+.flag-img{
+  border-radius: 0;
+  width: 1rem;
+  height: auto;
+  padding-bottom: 2px;
+}
+
+.table-socials{
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  margin-right: 1rem;
+  transition: 0.2s;
+}
+
+.table-socials:hover {
+  color: #368cff;
+}
+
+.bio-p {
+  white-space: pre-wrap;
+}
+
+.flagRow {
+width: 100%;
+}
+
+.flagRow:hover {
+  width: 100%;
+}
+
+.pic {
+
+}
+
+.pic:hover {
+  padding: 0;
+}

@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('../../../fonts/Rajdhani-Font/Rajdhani-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rajdhani-Light';
+  src: url('../../../fonts/Rajdhani-Font/Rajdhani-Light.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Elemental';
+  src: url('../../../fonts/elemental-end-Font/Elemental\ End.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Tango;
+  src: url(../../../fonts/tangosans-Font/TangoSans.ttf);
+}
+
+@font-face {
+  font-family: Tango-Light;
+  src: url(../../../fonts/tangosans-Font/TangoSans_Italic.ttf);
+}
+
+.titleArea {
+  font-size: 3em;
+  line-height: 1;
+}
+
+.titleArea h1 {
+  font-size: 1.2em;
+}
+
+.canvas-col {
+  min-height: 700px;
+  width: 100%;
+  height: 100%;
+  position:relative;
+  z-index:0;
+  left:0;
+  top:0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.canvas-col h1 {
+  color: #FFFFFF;
+  line-height: 1;
+}
+
+.canvas-col h2 {
+  color: #FFFFFF;
+  line-height: 1;
+  font-size: 1.25em;
+
+  white-space: pre-wrap;
+  word-break: keep-all; /*this stops the word breaking*/
+}
+
+.canvas-col p:last-of-type {
+  font-size: 1.33em;
+}
+
+.canvas-col p:first-of-type {
+  font-weight: 700;
+  font-size: 1.33em;
+}
+
+.canvas-col p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.header-navbar-row {
+  background-color: #100F0F;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid #368cff;
+}
+
+.canvas-row {
+  padding-top: 10px;
+}
+
+.textGradient {
+  background: #FFFFFF;
+  background: linear-gradient(to right, #001eff 0%, #00bbff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.underlined {
+  border-bottom: 2px solid #00bbff;
+  line-height: 0.85;
+}
+
+.bg {
+  background-image: url(../../../images/bg.png);
+  background-size: cover;
+
+}
+
+
+#mobileParagraph {
+  width: 66%;
+}
+
+@media only screen and (max-width: 600px) {
+  .titleArea {
+    font-size: 2em;
+    margin-top: -100px;
+  }
+
+
+
+  .canvas-col h1 {
+    color: #FFFFFF;
+    line-height: 1;
+    white-space: pre-wrap;
+    word-break: keep-all;
+    width: 80%;  
+  
+  }
+
+  .canvas-col h2 {
+    color: #FFFFFF;
+    line-height: 1;
+    white-space: pre-wrap;
+    word-break: keep-all; /*this stops the word breaking*/
+    width: 80%;
+  }
+
+  .canvas-col p:last-of-type {
+    font-size: 1.25em;
+  }
+  
+  .canvas-col p:first-of-type {
+    font-weight: 700;
+    font-size: 1.25em;
+  }
+
+  #mobileParagraph {
+    height:auto;
+    width: 100%;
+  }
+}

@@ -1,0 +1,8 @@
+.modal, .modal .btn-close {
+  color: #FFFFFF;
+}
+
+.modal .modal-content {
+  background-color: #100F0F;
+  border: 1px solid #0F3D3E;
+}

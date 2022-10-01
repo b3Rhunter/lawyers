@@ -1,0 +1,25 @@
+.directory-navbar-row {
+  background-color: #100F0F;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid #368cff;
+}
+
+.directory-title{
+  padding-top: 150px;
+  font-weight: 700;
+}
+
+#directory {
+font-family: Sporting;
+}
+
+.directory-apply-button-col{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.directory-apply-button-col button{
+  margin-top: 150px;
+}
