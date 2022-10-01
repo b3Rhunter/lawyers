@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import sanityClient from "../client.js";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
-
+import "./posts.css";
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -43,17 +43,17 @@ export default function OnePost() {
         <div className="relative">
           <div className="absolute h-full w-full flex items-center justify-left p-2">
             {/* Title Section */}
-            <div className="p-3" style={{marginTop: "400px", marginLeft: "50px", borderRadius: "10px", border: "1px solid #fff", backgroundColor: "#000", opacity: "80%"}}>
-              <h2 className="text-2xl lg:text-3xl mb-2 text-white">
+            <div id="mobileTitle" className="p-3" style={{ borderRadius: "10px", border: "1px solid #fff", backgroundColor: "#000", opacity: "80%"}}>
+              <h2 id="titleText" className="mb-2 text-white">
                 {postData.title}
               </h2>
-              <div className="flex justify-center text-white">
+              <div className="flex justify-left text-white">
                 <img
                   src={urlFor(postData.authorImage).url()}
                   className="w-10 h-10 rounded-full"
                   alt="Author: Pub"
                 />
-                <h4 className="flex items-center pl-2 text-2xl">
+                <h4 style={{fontSize: "0.75em", paddingTop: "12px"}} className="flex">
                   {postData.name}
                 </h4>
               </div>
@@ -63,7 +63,7 @@ export default function OnePost() {
             className="w-full object-cover rounded-t"
             src={urlFor(postData.mainImage).url()}
             alt=""
-            style={{ height: "400px" }}
+            style={{ height: "auto" }}
           />
         </div>
         <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
