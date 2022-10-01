@@ -135,3 +135,12 @@ body {
     top: 20px;
   }
 }
+
+@media (max-width:515px) {
+  .connectButton {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    margin-right: 55px;
+  }
+}
