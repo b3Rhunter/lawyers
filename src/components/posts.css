@@ -42,7 +42,7 @@
 .button {
     background-color: #d02128;
     border: 1px solid;
-    border-color: #313131;
+    border-color: #000000;
     color: #fff;
     border-radius: 5px;
     padding: 5px 10px 5px 10px;
@@ -62,7 +62,14 @@
 -webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
 box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+position: absolute;
+bottom: 0;
+right: 0;
+width: 80%;
+font-size: 0.7em;
+background-color: rgba(0,0,0,0.75);
 }
+
 
 .logo {
 display: block;
@@ -74,7 +81,7 @@ margin-top: -25px;
 }
 
 .nav {
-    background-color: #313131;
+    background-color: #000000;
 }
 
 #mobileTitle {
