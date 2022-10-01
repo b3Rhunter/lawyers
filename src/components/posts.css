@@ -2,6 +2,11 @@
 @import url("https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
 
+
+#titleText {
+  font-size: 1.2em;
+}
+
 .cursive {
   font-family: "Amatic SC", cursive;
   font-weight: 700;
@@ -70,6 +75,28 @@ margin-top: -25px;
 
 .nav {
     background-color: #313131;
+}
+
+#mobileTitle {
+  margin-top: 57%;
+}
+
+@media only screen and (max-width: 1200px) {
+  #titleText {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #titleText {
+    font-size: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  #mobileTitle {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
