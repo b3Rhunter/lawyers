@@ -60,6 +60,7 @@ body {
   float: right;
   font-size: 18px;
   margin-left: 150px;
+  text-align: left;
 }
 
 .nav > .nav-links > a {
@@ -85,7 +86,7 @@ body {
   }
 }
 
-@media (max-width:1920px) {
+@media (max-width:4000px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -106,6 +107,7 @@ body {
     width: 25px;
     height: 10px;
     border-top: 2px solid #eee;
+    
   }
   .nav > .nav-links {
     position: absolute;
@@ -143,6 +145,8 @@ body {
     right: 0;
     top: 20px;
     margin-right: 55px;
-
   }
+  .nav > .nav-links {
+text-align: center;
+}
 }
