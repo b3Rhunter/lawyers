@@ -19,7 +19,9 @@ export const Footer = () => {
 
         <Row>
           <Col className="apply-col">
-            <button style={{marginTop: "24px", marginBottom: "50px"}} className="po-button" onClick={handleClick}>Apply</button>
+            <a  href="https://docs.google.com/forms/d/1xByegLdLm69gYBMulSTbWl9uswE-WsuNPDKVbo80wrA/viewform?edit_requested=true">
+            <button style={{marginTop: "24px", marginBottom: "50px"}} className="po-button">Apply</button>
+          </a>
           </Col>
         </Row>
 
