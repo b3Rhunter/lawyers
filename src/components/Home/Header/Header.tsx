@@ -34,7 +34,7 @@ export const Header = () => {
                 <p style={{fontFamily: "Tango-Light"}}>anywhere.</p>
               </div>  
 
-                <div id="mobileParagraph" style={{ textAlign: "justify"}}>
+                <div id="mobileParagraph">
                 <br></br>
                 <h5  style={{
                   borderTop: "1px solid #fff",
