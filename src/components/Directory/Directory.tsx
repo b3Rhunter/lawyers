@@ -26,7 +26,9 @@ export const Directory = () => {
             <h1 id="directory" style={{fontFamily: 'Rajdhani'}} className="directory-title">Directory</h1>
           </Col>
           <Col className="directory-apply-button-col">
-            <button className="po-button" onClick={handleClick}>Apply</button>
+            <a href="https://docs.google.com/forms/d/1xByegLdLm69gYBMulSTbWl9uswE-WsuNPDKVbo80wrA/viewform?edit_requested=true">
+            <button className="po-button">Apply</button>
+            </a>
           </Col>
         </Row>
       </Container>
