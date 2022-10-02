@@ -111,7 +111,7 @@
 
 
 #mobileParagraph {
-  width: 66%;
+  width: 50%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -120,7 +120,9 @@
     margin-top: -100px;
   }
 
-
+.canvas-col {
+  margin-bottom: -200px;
+}
 
   .canvas-col h1 {
     color: #FFFFFF;
@@ -150,6 +152,6 @@
 
   #mobileParagraph {
     height:auto;
-    width: 100%;
+    width: 75%;
   }
 }
