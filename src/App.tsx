@@ -6,6 +6,7 @@ import Singles from './components/OnePost';
 import { Home } from './components/Home/Home';
 import { Directory } from './components/Directory/Directory';
 import { ApplicationForm } from './features/applicationForm/ApplicationForm';
+import NewDir from './components/NewDir';
 
 
 
@@ -15,7 +16,7 @@ function App() {
   
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="directory" element={<Directory />} />
+        <Route path="newDir" element={<NewDir />} />
 
         <Route path="articles" element={<Articles />} />
         <Route path="/:slug" element={<Singles />} />
