@@ -2,7 +2,7 @@ import algoliasearch from 'algoliasearch';
 import sanityClient from "../client.js";
 import indexer, { flattenBlocks } from 'sanity-algolia';
 
-const algolia = algoliasearch(...);
+const algolia = algoliasearch('VZG39PWRA5', 'a6d1b7308375b492a611e00ca3ff945a');
 const sanity = sanityClient;
 
 export default function handler(req, res) {
