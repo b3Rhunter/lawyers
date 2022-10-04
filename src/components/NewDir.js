@@ -117,7 +117,8 @@ function urlFor(source) {
                       <Row style={{fontSize: "1vw", padding: "10px"}}>
                      
                             <Col style={{marginTop: "-2px"}} span={6}>
-                            <button style={{color: "#087bff"}} onClick={email}><BsFillEnvelopeFill/></button>
+                            <Mailto email={author.email}>
+                            </Mailto> 
                             </Col>
                        
                             <Col span={6}>
@@ -130,9 +131,7 @@ function urlFor(source) {
                             <span style={{color: "#087bff"}}>{author.phone}</span>
                             </Col>  
 
-                            <Mailto email={author.email}>
-
-                            </Mailto>            
+           
                       
                         </Row>
 
