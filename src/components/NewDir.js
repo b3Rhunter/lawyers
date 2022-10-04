@@ -77,19 +77,19 @@ function urlFor(source) {
                   <Col id="accordion" className="accordion" span={8}>
                   <div id="accordion" className="accordion-item" onClick={() => setIsActive(!isActive)} style={{padding: "10px"}}>
 
-                  <div style={{width: "20px", height: "20px", lineHeight: "0.75"}}>{isActive ? '-' : '+'}</div>          
+                  <div className="toggle" style={{width: "20px", height: "20px", lineHeight: "0.75"}}>{isActive ? '-' : '+'}</div>          
         
                   </div>
                   </Col>
                   <Col span={8} pull={4}>
-                    <span style={{fontSize: "2vw"}}>
+                    <span className="name" >
                     {author.name.length < 8
                 ? `${author.name}`
                 : `${author.name.substring(0, 8)}...`}
                     </span>
                   </Col>
                   <Col span={8}>
-                    <span style={{fontSize: "2vw"}}>
+                    <span className="location">
                       {author.jurisdiction}
                     </span>
                   </Col>

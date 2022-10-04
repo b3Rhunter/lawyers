@@ -74,4 +74,35 @@
     font-size: 2vw;
 }
 
+#name {
+    font-size: 2vw;
+}
+
+#location {
+    font-size: 2vw;
+}
+
+#toggle {
+    font-size: 2vw;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #directory {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #name {
+        font-size: 1.5vw;
+    }
+    
+    #location {
+        font-size: 1.5vw;
+    }
+    #toggle {
+        font-size: 1.5vw;
+    }
+}
+
 
