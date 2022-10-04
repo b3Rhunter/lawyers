@@ -60,7 +60,7 @@ export const Navbar = () => {
     
     <div className="nav-links">
       <a href="#MemberBenefits">Benefits</a>
-      <a href="#Directory">Directory</a>
+      <a href="newDir" target="_blank" rel="noreferrer">Directory</a>
       <a href="articles" target="_blank" rel="noreferrer">Articles</a>
       <a href="mailto:info@blockchainlawyers.group">Contact</a>
       <a href="https://medium.com/@BlockchainLG/web3-and-the-quest-for-a-global-legal-advisory-introducing-the-blockchain-lawyers-group-165c55c12859" target="_blank" rel="noreferrer">Whitepaper</a>

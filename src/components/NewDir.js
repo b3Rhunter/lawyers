@@ -3,13 +3,16 @@ import sanityClient from "../client";
 import { Link } from "react-router-dom";
 import "./dark-theme.css";
 import "./posts.css";
-import { Button, notification, Row, Col } from "antd";
+import { Button, notification, Row, Col, Table } from "antd";
 import { Navbar } from "../components/Navbar/Navbar.tsx";
 import "../components/Home/Header/Header.css";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 import "./newDir.css";
-import { BsLinkedin, BsTwitter } from "react-icons/bs";
+import { BsLinkedin, BsTwitter, BsFillEnvelopeFill } from "react-icons/bs";
+
+
+
 
 export default function NewDir() {
     const [dirData, setNewDir] = useState(null);
@@ -40,74 +43,98 @@ function urlFor(source) {
     
       console.log(dirData);
 
+      const [isActive, setIsActive] = useState(false);
+
+   
+
+      function email() {
+        window.location.href = "mailto:"+ dirData.author.email;
+      }
+
       return (
        
-        <>
-        
-        <div className="min-h-screen p-12">
+        <><Navbar/>
 
-          <div className="container mx-auto">
+        <Row id="directory" style={{marginTop: "125px"}} justify="center">
+          <Col span={24}>
 
-        <div>
-        <h3>
-          <span  style={{
-            fontFamily: "Rajdhani",
-            fontSize: "3vw",
-            borderBottom: "1px solid #00bbff",
-            }}>Directory</span>
-
-            </h3>
-        </div>
-
-            <div id="Directory">
-              {dirData &&
-                dirData.map((author, index) => (
-      
-                  <span id="lawyer"
-                    className="block relative rounded shadow "
-                    key={index}
-                  >
-                    <div>
-                    <p>
-                    <span id="name" style={{color: "#fff", fontSize: "2vw"}}>
-                        {author.name}
-                    </span>
-                
-                    <span id="location" style={{color: "#fff", float: "right", fontSize: "2vw"}}>
-                        {author.jurisdiction}
-                    </span>
-                    </p>
-                    </div>
-                    
-                    <div id="content">
-                    <div id="image">
-                    <img style={{borderRadius: "100%"}} src={urlFor(author.image).url()} alt=""></img>
-                    </div>
-                    <p>{author.expertise}</p>
-                    <BlockContent
-                        blocks={author.bio}
-                        projectId={sanityClient.clientConfig.projectId}
-                        dataset={sanityClient.clientConfig.dataset}
-                    />
-                    <p>{author.email}</p>
-                    <p>{author.phone}</p>
-                    <p>
-                    <span>
-                    <a href={author.linkedin}><BsLinkedin/></a>
-                    </span>
-                    <span style={{paddingLeft: "10px"}}>
-                    <a href={author.twitter}><BsTwitter/></a>
-                    </span>
-                    </p>
-                    </div>
-                  </span>
-                ))}
-
+            <div style={{textAlign: "center", fontSize: "3vw", fontFamily: "Rajdhani", paddingBottom: "20px", marginBottom: "24px", paddingTop: 20}} id="header">
+            <span style={{borderBottom: "2px solid #00bbff"}}>Directory</span>
             </div>
 
+            <Col  style={{padding: "24px"}} span={24}>
+            {dirData &&
+                dirData.map((author, index) => (
 
-            
-          </div>
-        </div></>
+                  <Row style={{marginBottom: "24px"}} key={index}>
+                  <Col id="accordion" className="accordion" span={8}>
+                  <div id="accordion" className="accordion-item" onClick={() => setIsActive(!isActive)} style={{padding: "10px"}}>
+
+                  <div style={{width: "20px", height: "20px", lineHeight: "0.75"}}>{isActive ? '-' : '+'}</div>          
+        
+                  </div>
+                  </Col>
+                  <Col span={8} pull={4}>
+                    <span style={{fontSize: "2vw"}}>
+                    {author.name.length < 8
+                ? `${author.name}`
+                : `${author.name.substring(0, 8)}...`}
+                    </span>
+                  </Col>
+                  <Col span={8}>
+                    <span style={{fontSize: "2vw"}}>
+                      {author.jurisdiction}
+                    </span>
+                  </Col>
+
+                  {isActive &&
+                  
+                  <Row style={{marginTop: "24px", backgroundColor: "rgba(0,0,0,0.3)", padding: "10px", borderRadius: "10px"}}>
+                   <Col  span={6}>
+                   <div>
+                      <img id="image" style={{ borderRadius: "100%" }} src={urlFor(author.image).url()} alt=""></img>
+                   </div>
+                   </Col>
+                    <Col span={18}>
+                      <div style={{marginBottom: "20px"}} id="subTitle">
+                            {author.expertise}
+                      </div>
+
+                      <div id="subSubText">
+                          <BlockContent
+                            blocks={author.bio}
+                            projectId={sanityClient.clientConfig.projectId}
+                            dataset={sanityClient.clientConfig.dataset} />
+                        </div>
+                        
+                      <Row style={{fontSize: "1vw", padding: "10px"}}>
+                     
+                            <Col style={{marginTop: "-2px"}} span={6}>
+                            <button style={{color: "#087bff"}} onClick={email}><BsFillEnvelopeFill/></button>
+                            </Col>
+                       
+                            <Col span={6}>
+                              <a href={author.linkedin}><BsLinkedin /></a>
+                            </Col>
+                            <Col span={6}>
+                              <a href={author.twitter}><BsTwitter /></a>
+                            </Col>   
+                            <Col span={6}>
+                            <span style={{color: "#087bff"}}>{author.phone}</span>
+                            </Col>              
+                      
+                        </Row>
+
+                          
+                      </Col>
+                      </Row>
+                        }
+                  </Row>
+                ))}
+            </Col>
+          </Col>
+        </Row>        
+      
+        </>
       );
 }

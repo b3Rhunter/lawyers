@@ -1,63 +1,77 @@
-#lawyer {
-    background-color: black;
-    border-radius: 25px;
-    border: 1px solid #00bbff;
-    padding: 24px;
-    margin-top: 10px;
-    transition: all .33s ease-in-out;
-    height: 100%;
+#header {
+    border-bottom: 1px solid #fff;
 }
 
 #image {
-    width: 10%;
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 15px;
+}
+
+#subTitle {
+    font-family: monospace;
+    font-size: 1.5vw;
+    border-bottom: 1px solid #fff;
+
+}
+
+#subSubText {
+    font-size: 1vw;
+}
+
+#directory {
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 1px solid #fff;
+    border-radius: 25px;
     margin-top: 50px;
-    margin-bottom: 20px;
 }
 
-
-
-#jurisdiction {
-    width: 25%;
-    float: left;
-    margin-top: -7px;
-    padding-left: 50px;
-    font-size:2vw;
+#anim {
+    height: 33px;
+    overflow: hidden;
+    transition: all .33s ease-in-out;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 24px;
 }
 
-#location {
-    margin: auto;
+#anim:hover #highlight {
+    background: #FFFFFF;
+    background: linear-gradient(to right, #001eff 0%, #00bbff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-#content {
-    display: none;
+#highlight {
+    background: #FFFFFF;
+    background: linear-gradient(to right, #001eff 0%, #00bbff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-#lawyer:hover #content {
+.topTitle {
+    background: #FFFFFF;
+    background: linear-gradient(to right, #001eff 0%, #00bbff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.show-btn label > span {
     display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+    z-index: 10;
 }
 
-#lawyer:active #content {
-    display: block;
+#accordion {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 2vw;
 }
 
-#fix {
-    margin: 0;
-}
 
-@media only screen and (max-width: 600px) {
-
-    #name {
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        top: 20px;
-    }
-
-    #location {
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        top: 20px;
-        right: 10px;
-    }
-}
