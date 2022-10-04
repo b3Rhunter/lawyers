@@ -48,8 +48,15 @@ function urlFor(source) {
    
 
       function email() {
-        window.location.href = "mailto:"+ dirData.author.email;
+        window.location.href = "mailto:"+dirData.author.email;
       }
+
+      const Mailto = ({ email }) => {
+        return (
+          <a href={`mailto:${email}`}><BsFillEnvelopeFill/></a>
+        );
+      };
+
 
       return (
        
@@ -121,7 +128,11 @@ function urlFor(source) {
                             </Col>   
                             <Col span={6}>
                             <span style={{color: "#087bff"}}>{author.phone}</span>
-                            </Col>              
+                            </Col>  
+
+                            <Mailto email={author.email}>
+
+                            </Mailto>            
                       
                         </Row>
 
